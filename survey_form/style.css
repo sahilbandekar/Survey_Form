@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+  }
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  width: 720px;
+  height: 1521px;
+  padding: 0px;
+  margin: 4.125rem auto 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 18px;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+  margin-bottom: 8px;
+}
+
+.header{
+  padding: 0px 10px;
+  margin: 0px 0px 30px 0px;
+}
+
+form{
+  background: var(--color-darkblue-alpha);
+  border-radius: 0.25rem;
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+#name-label, #email-label, #number-label{
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+#survey-form{
+  padding: 40px;
+}
+
+.clue {
+  color: #e4e4e4;
+  margin-left: 4px;
+  font-size: 14.4px;
+}
+.clue2 {
+  color: #e4e4e4;
+  margin-left: 4px;
+  font-size: 14.4px;
+}
+
+select#dropdown {
+  color: #495057;
+}
+
+.recommandation{
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-radio, .input-checkbox{
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  padding: 12px;
+  border-radius: 2px;
+  background: var(--color-green);
+  color: inherit;
+  cursor: pointer;
+}
+
+.button{
+  border: none;
+}
